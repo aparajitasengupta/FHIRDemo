@@ -1,0 +1,54 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "MOCK-TST-diagnostic-report-12345",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "15220000",
+          "display": "Laboratory",
+          "system": "http://snomed.info/sct"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "10851-4",
+        "display": "Escherichia coli O157",
+        "system": "http://loinc.org"
+      }
+    ],
+    "text": "Escherichia coli O157"
+  },
+  "effectiveDateTime": "2023-04-16T07:17:51-06:00",
+  "encounter": {
+    "reference": "Encounter/MOCK-TST-p2enc010"
+  },
+  "performer": [
+    {
+      "reference": "PractitionerRole/MOCK-TST-p2prr-mccutchen"
+    }
+  ],
+  "presentedForm": [
+    {
+      "url": "testurl.com",
+      "creation": "2023-04-16T07:17:51-06:00"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/MOCK-TST-testuser101"
+  },
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/MOCK-TST-servreq-binary-12345"
+    }
+  ],
+  "result": [
+    {
+      "reference": "Observation/MOCK-TST-obs-12345"
+    }
+  ]
+}
